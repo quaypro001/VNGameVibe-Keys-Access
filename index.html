@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VNGameVibe Keys/Access - Plants vs Zombies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>VNGameVibe Keys/Access</h1>
+        <p>Plants vs Zombies - Key Management</p>
+    </header>
+    
+    <nav>
+        <button onclick="switchToConvert()">Go to CSV Converter</button>
+    </nav>
+    
+    <main>
+        <div id="table-container">
+            <div id="filter-container">
+                <label for="game-filter">Select Game: </label>
+                <select id="game-filter" onchange="filterByGame()">
+                    <option value="all">All Games</option>
+                    <option value="Plants vs Zombies Fusion">Plants vs Zombies Fusion</option>
+                    <option value="Plants vs Zombies Symbiosis">Plants vs Zombies Symbiosis</option>
+                </select>
+            </div>
+            <h2 id="current-part">Part 1</h2>
+            <table id="keys-table">
+                <thead>
+                    <tr>
+                        <th>Key</th>
+                        <th>Game</th>
+                        <th>Key Page</th>
+                        <th>Email</th>
+                        <th>User</th>
+                        <th>Claimed On</th>
+                        <th>Last Viewed On</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body"></tbody>
+            </table>
+            <div id="pagination">
+                <button onclick="prevPart()">Previous Part</button>
+                <span id="part-info">Part 1</span>
+                <button onclick="nextPart()">Next Part</button>
+            </div>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
