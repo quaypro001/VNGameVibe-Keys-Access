@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert CSV to JSON - VNGameVibe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Convert CSV to JSON</h1>
+        <p>Upload a CSV file to convert to JSON for Plants vs Zombies Keys</p>
+    </header>
+    
+    <nav>
+        <button onclick="switchToMain()">Back to Main Page</button>
+    </nav>
+    
+    <main>
+        <input type="file" id="csv-file" accept=".csv" />
+        <button onclick="convertCSV()">Convert to JSON</button>
+        <div id="result"></div>
+    </main>
+    
+    <script src="convert.js"></script>
+</body>
+</html>
